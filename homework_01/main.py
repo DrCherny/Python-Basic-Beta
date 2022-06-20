@@ -4,14 +4,14 @@
 """
 
 
-def power_numbers():
+def power_numbers(numbers):
     """
     функция, которая принимает N целых чисел,
     и возвращает список квадратов этих чисел
     >>> power_numbers(1, 2, 5, 7)
     <<< [1, 4, 25, 49]
     """
-
+    return [number ** 2 for number in numbers]
 
 # filter types
 ODD = "odd"
@@ -30,3 +30,4 @@ def filter_numbers():
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     <<< [2, 4]
     """
+
